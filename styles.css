@@ -1,0 +1,94 @@
+body {
+  color: white;
+  background-image: -webkit-linear-gradient(15deg, rgb(77, 0, 57) 0%, rgb(48, 1, 74) 20%, rgb(1, 43, 74) 50%, rgb(48, 1, 74) 80%, rgb(77, 0, 57) 100%);
+  /* background-image: -webkit-linear-gradient(15deg, rgb(102, 0, 0) 0%, rgb(102, 41, 0) 17%, rgb(102, 102, 0) 33%, rgb(0, 102, 0) 50%, rgb(0, 0, 102) 66%, rgb(20, 20, 82) 83%, rgb(48, 1, 74) 100%); */
+}
+
+/* The side navigation menu */
+.sidebar1 {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar2 {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
+  right: 0;
+}
+
+/* Sidebar links */
+.sidebar1 a, .sidebar2 a {
+  display: block;
+  color: aqua;
+  text-decoration: none;
+}
+
+/* Links on mouse-over */
+.sidebar1 a:hover, .sidebar2 a:hover {
+  background-color: #004d4d;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content, div.changelog {
+  margin-left: 280px;
+  margin-right: 280px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar1, .sidebar2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar1 a {float: none;}
+  .sidebar2 a {float: none;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar1 a, .sidebar2 a {
+    text-align: center;
+    float: none;
+  }
+}
+
+div.content a:hover:not(.link) img{
+    display: block;
+}
+
+.image {
+  display: none;
+  width: 50%;
+  height: auto;
+}
+
+div.content li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.sidebar1 li, div.sidebar2 li {
+  margin-left: -10px;
+}
+
+h2.disclaimer {
+  background-color: red;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: solid red;
+}
