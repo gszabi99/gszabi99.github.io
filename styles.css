@@ -55,7 +55,7 @@ a {
 }
 
 /* Links on mouse-over */
-div.sidebar1 a:hover, div.sidebar2 a:hover {
+div.sidebar1 a:hover, div.sidebar2 a:hover, summary:hover {
   background-color: #004d4d;
   color: white;
 }
@@ -124,5 +124,6 @@ div.footer {
 }
 
 summary {
-    cursor: pointer;
+  color: aqua;
+  cursor: pointer;
 }
