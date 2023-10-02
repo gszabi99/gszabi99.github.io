@@ -1,45 +1,67 @@
 body {
   color: white;
-  background-image: -webkit-linear-gradient(15deg, rgb(77, 0, 57) 0%, rgb(48, 1, 74) 20%, rgb(1, 43, 74) 50%, rgb(48, 1, 74) 80%, rgb(77, 0, 57) 100%);
-  /* background-image: -webkit-linear-gradient(15deg, rgb(102, 0, 0) 0%, rgb(102, 41, 0) 17%, rgb(102, 102, 0) 33%, rgb(0, 102, 0) 50%, rgb(0, 0, 102) 66%, rgb(20, 20, 82) 83%, rgb(48, 1, 74) 100%); */
+  /* background-image: -webkit-linear-gradient(15deg, rgb(77, 0, 57) 0%, rgb(48, 1, 74) 20%, rgb(1, 43, 74) 50%, rgb(48, 1, 74) 80%, rgb(77, 0, 57) 100%); */
+  background-color: rgb(16,65,82);
+  font-family: 'Roboto', sans-serif;
 }
 
 /* The side navigation menu */
-.sidebar1 {
+div.sidebar1 {
   margin: 0;
   padding: 0;
   width: 280px;
   position: fixed;
-  height: 100%;
+  height: 98.5%;
   overflow: auto;
+  background-color: rgb(8,34,43);
+  font-weight: bold;
+  border-radius: 15px;
 }
 
-.sidebar2 {
+div.sidebar2 {
   margin: 0;
   padding: 0;
   width: 280px;
   position: fixed;
-  height: 100%;
+  height: 98.5%;
   overflow: auto;
   float: left;
   right: 0;
+  background-color: rgb(8,34,43);
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+div.sidebar1 p {
+  margin-left: 15px;
+}
+
+div.sidebar1 li {
+  margin-left: -25px;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+div.sidebar2 li {
+  margin-left: -10px;
+  margin-right: 20px;
+  list-style-type: none;
 }
 
 /* Sidebar links */
-.sidebar1 a, .sidebar2 a {
-  display: block;
+a {
   color: aqua;
   text-decoration: none;
 }
 
 /* Links on mouse-over */
-.sidebar1 a:hover, .sidebar2 a:hover {
+div.sidebar1 a:hover, div.sidebar2 a:hover {
   background-color: #004d4d;
   color: white;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content, div.changelog {
+div.content, div.changelog, div.footer {
   margin-left: 280px;
   margin-right: 280px;
   padding: 1px 16px;
@@ -48,25 +70,25 @@ div.content, div.changelog {
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-  .sidebar1, .sidebar2 {
+  div.sidebar1, div.sidebar2 {
     width: 100%;
     height: auto;
     position: relative;
   }
-  .sidebar1 a {float: none;}
-  .sidebar2 a {float: none;}
+  div.sidebar1 a {float: none;}
+  div.sidebar2 a {float: none;}
   div.content {margin-left: 0;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
-  .sidebar1 a, .sidebar2 a {
+  div.sidebar1 a, div.sidebar2 a {
     text-align: center;
     float: none;
   }
 }
 
-div.content a:hover:not(.link) img{
+div.content a:hover:not(.link) img, div.changelog a:hover:not(.link) img{
     display: block;
 }
 
@@ -76,19 +98,27 @@ div.content a:hover:not(.link) img{
   height: auto;
 }
 
-div.content li {
+li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-div.sidebar1 li, div.sidebar2 li {
-  margin-left: -10px;
-}
-
 h2.disclaimer {
-  background-color: red;
+  background-color: rgb(255, 179, 179);
+  color: rgb(179, 0, 0);
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  border: solid red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+div.sidebar1 h2, div.sidebar2 h2 {
+  text-align: center;
+}
+
+div.footer {
+  margin-top: 40px;
+  float: right;
 }
