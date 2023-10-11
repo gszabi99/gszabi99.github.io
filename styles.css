@@ -36,6 +36,10 @@ div.sidebar1 p {
   margin-left: 15px;
 }
 
+div.sidebar1 ul {
+  padding-bottom: 10px;
+}
+
 div.sidebar1 li {
   margin-left: -25px;
   margin-right: 10px;
@@ -126,4 +130,23 @@ div.footer {
 summary {
   color: aqua;
   cursor: pointer;
+}
+
+.datever_ancient {
+    color: lightgrey;
+}
+.datever_2020 {
+    color: rgb(255, 128, 128);
+}
+.datever_2021 {
+    color: orange;
+}
+.datever_2022 {
+    color: rgb(255, 255, 128);
+}
+.datever_2023 {
+    color: lightgreen;
+}
+.datever_2024 {
+    color: rgb(255, 51, 255);
 }
