@@ -118,6 +118,16 @@ h2.disclaimer {
   border-radius: 15px;
 }
 
+.h2 {
+  /* display: block; */
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
 div.sidebar1 h2, div.sidebar2 h2 {
   text-align: center;
 }
