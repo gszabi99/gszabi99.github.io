@@ -92,16 +92,6 @@ div.content, div.changelog, div.footer {
   }
 }
 
-div.content a:hover:not(.link) img, div.changelog a:hover:not(.link) img{
-    display: block;
-}
-
-.image {
-  display: none;
-  width: 50%;
-  height: auto;
-}
-
 li {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -140,6 +130,28 @@ div.footer {
 summary {
   color: aqua;
   cursor: pointer;
+}
+
+.tooltip {
+  text-decoration: none;
+  position: relative;
+}
+
+.tooltip span {
+  display: none;
+  border-radius: 10px;
+  background: rgb(16,65,82);
+}
+
+.tooltip span img {
+  max-width: 512px;
+}
+
+.tooltip:hover span {
+  display: block;
+  float: right;
+  z-index: 1000;
+  overflow: hidden;
 }
 
 .datever_ancient {
