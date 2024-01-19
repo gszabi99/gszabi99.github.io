@@ -158,17 +158,17 @@ summary {
     color: lightgrey;
 }
 .datever_2020 {
-    color: rgb(255, 128, 128);
+    color: rgb(180, 128, 255);
 }
 .datever_2021 {
-    color: orange;
+    color: rgb(255, 128, 128);
 }
 .datever_2022 {
-    color: rgb(255, 255, 128);
+    color: orange;
 }
 .datever_2023 {
-    color: lightgreen;
+    color: rgb(255, 255, 128);
 }
 .datever_2024 {
-    color: rgb(255, 51, 255);
+    color: lightgreen;
 }
