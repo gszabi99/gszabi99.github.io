@@ -72,29 +72,10 @@ div.content, div.changelog, div.footer {
   height: 100%;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  div.sidebar1, div.sidebar2 {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  div.sidebar1 a {float: none;}
-  div.sidebar2 a {float: none;}
-  div.content {margin-left: 0;}
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  div.sidebar1 a, div.sidebar2 a {
-    text-align: center;
-    float: none;
-  }
-}
-
 li {
   margin-top: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 h2.disclaimer {
@@ -134,24 +115,49 @@ summary {
 
 .tooltip {
   text-decoration: none;
-  position: relative;
 }
 
 .tooltip span {
   display: none;
   border-radius: 10px;
   background: rgb(16,65,82);
+  max-width: 512px;
 }
 
 .tooltip span img {
-  max-width: 512px;
+  width: 100%;
 }
 
 .tooltip:hover span {
   display: block;
-  float: right;
+  /* float: right; */
+  right: 0;
   z-index: 1000;
   overflow: hidden;
+  position: absolute;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1000px) {
+  div.sidebar1, div.sidebar2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  div.sidebar1 a {float: none;}
+  div.sidebar2 a {float: none;}
+  div.content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  div.sidebar1 a, div.sidebar2 a {
+    text-align: center;
+    float: none;
+  }
 }
 
 .datever_ancient {
