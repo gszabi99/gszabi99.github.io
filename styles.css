@@ -92,8 +92,18 @@ h2.disclaimer {
 .h2 {
   /* display: block; */
   font-size: 1.5em;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
+  margin-top: 0.7em;
+  margin-bottom: 0.6em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.h3 {
+  /* display: block; */
+  font-size: 1.17em;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
