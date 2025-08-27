@@ -1,4 +1,5 @@
 body {
+  color-scheme: only light;
   color: white;
   /* background-image: -webkit-linear-gradient(15deg, rgb(77, 0, 57) 0%, rgb(48, 1, 74) 20%, rgb(1, 43, 74) 50%, rgb(48, 1, 74) 80%, rgb(77, 0, 57) 100%); */
   background-color: rgb(16,65,82);
@@ -123,28 +124,32 @@ summary {
   cursor: pointer;
 }
 
-.tooltip {
+a.tooltip {
   text-decoration: none;
 }
 
-.tooltip span {
+a.tooltip span.tooltip {
   display: none;
   border-radius: 10px;
   background: rgb(16,65,82);
   max-width: 512px;
 }
 
-.tooltip span img {
+a.tooltip span.tooltip img {
   width: 100%;
 }
 
-.tooltip:hover span {
+a.tooltip:hover span.tooltip {
   display: block;
   /* float: right; */
   right: 0;
   z-index: 1000;
   overflow: hidden;
   position: absolute;
+}
+
+span.fi-yu {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/61/Flag_of_Yugoslavia_%281946-1992%29.svg)
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
