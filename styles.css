@@ -188,11 +188,14 @@ span.fi-yu {
     color: rgb(255, 128, 128);
 }
 .datever_2023 {
-    color: orange;
+    color: rgb(255, 146, 64);
 }
 .datever_2024 {
-    color: rgb(255, 255, 128);
+    color: rgb(255, 195, 43);
 }
 .datever_2025 {
+    color: rgb(237, 252, 131);
+}
+.datever_2026 {
     color: lightgreen;
 }
