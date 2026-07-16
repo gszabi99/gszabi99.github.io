@@ -114,6 +114,10 @@ div.sidebar1 h2, div.sidebar2 h2 {
   text-align: center;
 }
 
+div.changelog summary.h2 {
+  margin-top: 0.3em;
+}
+
 div.footer {
   margin-top: 40px;
   float: right;
